@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --body-bg: url(../Imagens/Background\ Img.jpg);
+    --container-color: white;
+    --container-shadow: rgba(0, 0, 0, 0.568);
+    --label-color: black;
+    --tittle-color: rgb(0, 84, 133);
+    --hyper-color: #0084ff;
+    --divG-color: #0E4E7C;
+    --divP-color: white;
+    --user-color: white;
+
+}
+.dark:root{
+    --body-bg: url(../Imagens/BACKGROUND\ DARK.jpg);
+    --container-color: rgba(39, 39, 39, 0.788);
+    --container-shadow: rgba(255, 255, 255, 0.568);
+    --label-color: white;
+    --tittle-color: #d10000;
+    --hyper-color: rgb(255, 166, 0);
+    --divG-color: rgba(255, 255, 255, 0.815);
+    --divP-color: black;
+    --user-color:  #0E4E7C;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image:var(--body-bg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 2s;
+}
+.telecall{
+    top: 100px;
+    height: 45px;
+    display: flex;
+    position: absolute;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    width: 22vw;
+    min-width: 300px;
+    max-width: 300px;
+    height: 50vh;
+    min-height: 484px;
+    max-height: 484px;
+    padding: 20px;
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    position: relative;
+    z-index: 1;
+    border-radius: 2px;
+    background-color: var(--container-color); /*darkmode*/
+    box-shadow: 1px 1px 18px 4px var(--container-shadow); /*darkmode*/
+    transition: 1s ease-in;
+    
+}
+.divform{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 480px;
+}
+.div1e2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.h1{
+    margin-bottom: 30px;
+    text-align: center;
+    color: rgb(0, 84, 133);
+    transition: 1s ease-in;
+}
+.divlabel{
+    width: 250px;
+}
+.formfont{
+    color: var(--label-color);
+
+}
+.boxsize{
+    height: 30px;
+    width: 250px;
+    margin-top: 2px;
+    font-size: 12px;
+    border-width: 1px;
+    background-color: white;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+.boxsize:hover{
+    background-color: rgba(211, 211, 211, 0.616);
+}
+.boxsize:focus-visible{
+    outline: 2px solid rgb(0, 84, 133);
+    background-color: rgba(211, 211, 211, 0.616);
+}
+.boxsizepass{
+    height: 30px;
+    width: 250px;
+    margin-top: 2px;
+    font-size: 12px;
+    border-width: 1px;
+    background-color: white;
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 40px;
+    position: absolute;
+    right: 9%;
+}
+.boxsizepass:hover{
+    background-color: rgba(211, 211, 211, 0.616);
+}
+.boxsizepass:focus-visible{
+    outline: 2px solid rgb(0, 84, 133);
+    background-color: rgba(211, 211, 211, 0.616);
+}
+.btnpass{
+    height: 26px;
+    width: 26px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 410%;
+    top: 4px;
+    background-image: url(../Imagens/OLHO\ ABERTO.jpg);
+    background-size: cover;
+    
+}
+.btnpass.show{
+    background-image: url(../Imagens/OLHO\ FECHADO.jpg);
+    background-size: cover;
+    
+}
+.forgot{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 18px;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+    color: var(--hyper-color); /*darkmode*/
+    font-weight: 300;
+}
+.forgot:hover{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    letter-spacing: 0.8px;
+    text-decoration: underline;
+    font-weight: 300;
+    transition: 0.5s;
+}
+.div5{
+    margin-top: 4px;
+    height: 70px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.divwall6{
+    margin: 15px 0px;
+    border: 1px solid rgb(0, 84, 133);
+    box-shadow: 0px 0px 50px 3px rgba(0, 0, 0, 0.5);
+    width: 20vw;
+    opacity: 0.6;
+    min-width: 290px;
+    max-width: 290px;
+}
+.div7{
+    margin-top: 10px;
+    height: 70px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hyperbtn{
+    text-decoration: none;
+    color: white;
+    width: 128px;
+    height: 42px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.btn1{
+    padding: 15px 40px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: white;
+    background-color: #d10000;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+
+    
+    width: 130px;
+    height: 43px;
+
+    border-radius: 3px;
+}
+.btn1:hover{
+    background-color: red;
+    width: 133px;
+    height: 46px;
+    transition: .3s;
+    z-index: 2;
+    border-radius: 3px;
+}
+.btn1:active{
+    width: 127px;
+    height: 40px;
+    transition: .1s;
+}
+.hyperbtn2{
+    text-decoration: none;
+    color: white;
+    width: 233px;
+    height: 58px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.btn2{
+    padding: 25px 30px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: white;
+    background-color: #d10000;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    
+
+    
+    width: 235px;
+    height: 60px;
+
+    border-radius: 3px;
+}
+.btn2:hover{
+    background-color: red;
+    width: 242px;
+    height: 62px;
+    transition: .3s;
+    z-index: 2;
+    border-radius: 3px;
+}
+.btn2:active{
+    width: 237px;
+    height: 55px;
+    transition: .1s;
+}
+.btnlink{
+    text-decoration: none;
+    color: #1877f2;
+}
+
+/*-----DARKMODE-----*/
+.darkmode{
+    display: none;
+}
+.coverdarkbtn{
+    display: flex;
+    position: absolute;
+    justify-content: right;
+    align-items: center;
+    gap: 80px;
+    
+    width: 300px;
+    height: 50px;
+    top: 1px;
+    right: 1px;
+    border-radius: 8px 0px 8px 70px;
+    background-color: var(--divG-color);
+}
+.divdark{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 20px;
+    width: 40px;
+    height: 30px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: var(--divP-color);
+}
+.userdiv{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.btnout{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    height: 40px;
+    right: 5px;
+}
+.username{
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    color: var(--user-color);
+    font-family: 'Work Sans', sans-serif;
+}
+.logout{
+    background-image: url(../Imagens/SAIR.png);
+    background-size: cover;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    
+    width: 22px;
+    height: 22px;
+}
+.bi-sun{
+    font-size: 1.3rem;
+    color: rgb(255, 196, 0);
+    cursor: pointer;
+}
+.bi-moon{
+    font-size: 1.3rem;
+    color: rgb(250, 250, 250);
+    cursor: pointer;
+    
+}
+
+
+
+
+
+/*@media screen and (min-width: 1440px) {
+    .boxsizepass{
+        right: 28%;
+    }
+}*/
+
+
+
